@@ -29,10 +29,11 @@
 		9361A14A175461D40050FE5B /* turbo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9361A149175461D40050FE5B /* turbo.png */; };
 		9361A14C175466BF0050FE5B /* turbo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9361A14B175466BF0050FE5B /* turbo2.png */; };
 		9361A14E17546CA20050FE5B /* App Icon in Resources */ = {isa = PBXBuildFile; fileRef = 9361A14D17546CA20050FE5B /* App Icon */; };
-		9361A15017546CE10050FE5B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9361A14F17546CE10050FE5B /* Icon.png */; };
-		9361A15217546CE60050FE5B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9361A15117546CE60050FE5B /* Icon@2x.png */; };
+		9361A15017546CE10050FE5B /* Icon-old.png in Resources */ = {isa = PBXBuildFile; fileRef = 9361A14F17546CE10050FE5B /* Icon-old.png */; };
+		9361A15217546CE60050FE5B /* Icon-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9361A15117546CE60050FE5B /* Icon-old@2x.png */; };
 		9361A155175D7E670050FE5B /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9361A154175D7E670050FE5B /* ConfigViewController.m */; };
 		9361A158175ED7090050FE5B /* ThemeLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9361A157175ED7090050FE5B /* ThemeLoader.m */; };
+		9386E9E2176FFA0A005616DB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9386E9E1176FFA0A005616DB /* icon.png */; };
 		9389A6E91768044600AD04CC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9389A6A41767FCD000AD04CC /* Media.xcassets */; };
 		93AF0D1517696D4300D18C49 /* lcd-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AF0D1417696D4300D18C49 /* lcd-grey.png */; };
 /* End PBXBuildFile section */
@@ -66,12 +67,13 @@
 		9361A149175461D40050FE5B /* turbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turbo.png; sourceTree = "<group>"; };
 		9361A14B175466BF0050FE5B /* turbo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turbo2.png; sourceTree = "<group>"; };
 		9361A14D17546CA20050FE5B /* App Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "App Icon"; sourceTree = "<group>"; };
-		9361A14F17546CE10050FE5B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		9361A15117546CE60050FE5B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		9361A14F17546CE10050FE5B /* Icon-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-old.png"; sourceTree = "<group>"; };
+		9361A15117546CE60050FE5B /* Icon-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-old@2x.png"; sourceTree = "<group>"; };
 		9361A153175D7E670050FE5B /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		9361A154175D7E670050FE5B /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		9361A156175ED7080050FE5B /* ThemeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeLoader.h; sourceTree = "<group>"; };
 		9361A157175ED7090050FE5B /* ThemeLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeLoader.m; sourceTree = "<group>"; };
+		9386E9E1176FFA0A005616DB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		9389A6A41767FCD000AD04CC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
 		93AF0D1417696D4300D18C49 /* lcd-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lcd-grey.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,8 +95,9 @@
 		9361A1041752698F0050FE5B = {
 			isa = PBXGroup;
 			children = (
-				9361A15117546CE60050FE5B /* Icon@2x.png */,
-				9361A14F17546CE10050FE5B /* Icon.png */,
+				9361A15117546CE60050FE5B /* Icon-old@2x.png */,
+				9361A14F17546CE10050FE5B /* Icon-old.png */,
+				9386E9E1176FFA0A005616DB /* icon.png */,
 				9361A1161752698F0050FE5B /* Calculator */,
 				9361A10F1752698F0050FE5B /* Frameworks */,
 				9361A10E1752698F0050FE5B /* Products */,
@@ -226,10 +229,11 @@
 				9389A6E91768044600AD04CC /* Media.xcassets in Resources */,
 				9361A14817545A2E0050FE5B /* lcd-white.png in Resources */,
 				9361A14A175461D40050FE5B /* turbo.png in Resources */,
+				9386E9E2176FFA0A005616DB /* icon.png in Resources */,
 				9361A14C175466BF0050FE5B /* turbo2.png in Resources */,
 				9361A14E17546CA20050FE5B /* App Icon in Resources */,
-				9361A15017546CE10050FE5B /* Icon.png in Resources */,
-				9361A15217546CE60050FE5B /* Icon@2x.png in Resources */,
+				9361A15017546CE10050FE5B /* Icon-old.png in Resources */,
+				9361A15217546CE60050FE5B /* Icon-old@2x.png in Resources */,
 				931365B7176399860022527A /* lcd-rainbow.png in Resources */,
 				931365B8176399860022527A /* lcd-white-textured.png in Resources */,
 				931365BB176399AB0022527A /* background-rainbow.png in Resources */,
@@ -301,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,7 +345,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Calculator/Calculator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -356,7 +360,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				INFOPLIST_FILE = "Calculator/Calculator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

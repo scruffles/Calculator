@@ -2,33 +2,26 @@
 #import "ThemeLoader.h"
 #import "Theme.h"
 
-@interface ViewController ()
+void keysFallOff();
 
+@interface ViewController ()
+    @property(nonatomic, strong) UIDynamicAnimator *animator;
 @end
 
 
 @implementation ViewController {
 @private
-    UILabel *_displayLabel;
     NSString *_currentTotal;
     NSString *_operation;
     NSString *_lastValue;
     bool _nextNumberIsNewValue;
     bool _uncalculated;
-    UIImageView *_lcdImage;
-    UIImageView *_backgroundImage;
 }
 
 NSString *const Addition = @"Addition";
 NSString *const Subtraction = @"Subtraction";
 NSString *const Multiplication = @"Multiplication";
 NSString *const Division = @"Division";
-
-@synthesize displayLabel = _displayLabel;
-
-@synthesize lcdImage = _lcdImage;
-
-@synthesize backgroundImage = _backgroundImage;
 
 + (ViewController *)instance {
     static ViewController *_instance = nil;
@@ -69,6 +62,9 @@ NSString *const Division = @"Division";
 }
 
 - (void)setDisplay:(NSString *)newCharacters {
+    if ([newCharacters isEqualToString:@"666"]) {
+        [self keysFallOff];
+    }
     _displayLabel.text = newCharacters;
 }
 
@@ -166,13 +162,26 @@ NSString *const Division = @"Division";
 
 - (void)recalculateAndDisplayTotal {
     [self recalculateTotal];
-    _displayLabel.text = _currentTotal;
+    [self setDisplay:_currentTotal];
 }
 
+- (void)keysFallOff {
+    UIDynamicAnimator* animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSMutableArray * array = [[NSMutableArray alloc] init];
+    for (UIView *subview in [self view].subviews) {
+        if ([subview isKindOfClass:UIButton.class]) {
+            [array addObject:subview];
+        }
+    }
+
+    UIGravityBehavior* gravityBehavior = [[UIGravityBehavior alloc] initWithItems:array];
+    UICollisionBehavior* collisionBehavior = [[UICollisionBehavior alloc] initWithItems:array];
+    collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    [animator addBehavior:gravityBehavior];
+    [animator addBehavior:collisionBehavior];
+    collisionBehavior.collisionDelegate = self;
+    self.animator = animator;
 }
 
 @end

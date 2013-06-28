@@ -9,11 +9,7 @@
 @implementation ConfigViewController {
 @private
     NSArray *themes;
-    UITableView *_tableView;
 }
-
-@synthesize tableView = _tableView;
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -35,11 +31,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString * id = [themes[indexPath.row] valueForKey:@"id"];
     [[ThemeLoader instance] setCurrentTheme: id];
-//    [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
